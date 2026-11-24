@@ -1,0 +1,501 @@
+/* ========================================== */
+/* 1. CONFIGURAÇÕES GERAIS                    */
+/* ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7f8;
+  color: #35414b;
+  line-height: 1.5;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ========================================== */
+/* 2. CABEÇALHO                               */
+/* ========================================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #233b53;
+  color: #ffffff;
+  padding: 20px 30px;
+
+  /* Imagem de fundo com película escura */
+  background-image:
+    linear-gradient(rgba(35, 59, 83, 0.75), rgba(35, 59, 83, 0.75)),
+    url("imagem/ocean\ .jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.identidade h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.identidade p {
+  color: #dce7ed;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d9c7a3;
+}
+
+/* ========================================== */
+/* 3. CONTEÚDO PRINCIPAL                      */
+/* ========================================== */
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main section h2 {
+  color: #233b53;
+}
+
+section p {
+  color: #35414b;
+}
+
+/* ========================================== */
+/* 4. DESTAQUE                                */
+/* ========================================== */
+
+.Destaque {
+  background-color: #58758d;
+  padding: 65px 20px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 12px;
+
+  /* Imagem de fundo com película escura */
+  background-image:
+    linear-gradient(rgba(35, 59, 83, 0.6), rgba(35, 59, 83, 0.6)),
+    url("imagem/tropical.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.Destaque img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
+
+.Destaque h2 {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.Destaque p {
+  color: #ffffff;
+  margin: 15px 0 25px;
+}
+
+.Botao {
+  display: inline-block;
+  background-color: #58758d;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.Botao:hover {
+  background-color: #d9c7a3;
+  color: #233b53;
+}
+
+/* ========================================== */
+/* 5. CARTÕES DOS DESTINOS                    */
+/* ========================================== */
+
+.lado-lado {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cartao {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  align-items: stretch;
+  background-color: #ffffff;
+  border: 1px solid #dce7ed;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(35, 59, 83, 0.12);
+}
+
+/* ========================================== */
+/* 6. IMAGENS PRINCIPAIS                      */
+/* ========================================== */
+
+.imagem-principal {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========================================== */
+/* 7. INFORMAÇÕES DOS DESTINOS                */
+/* ========================================== */
+
+.informacoes-destino {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+.informacoes-destino h3 {
+  background-color: #233b53;
+  color: #ffffff;
+  font-size: 28px;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.informacoes-destino p {
+  color: #35414b;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* ========================================== */
+/* 8. GALERIA DE ATIVIDADES                   */
+/* ========================================== */
+
+.galeria-atividades {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.atividade {
+  min-width: 0;
+  text-align: center;
+}
+
+.atividade img {
+  width: 100%;
+  height: 115px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.atividade span {
+  display: block;
+  color: #58758d;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+/* ========================================== */
+/* 9. CONTATO                                 */
+/* ========================================== */
+
+/* FUNDO DA SEÇÃO CONTATO */
+#contato {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 30px;
+  border-radius: 12px;
+}
+
+#contato {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contato div {
+  background-color: #dce7ed;
+  color: #35414b;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+#contato h2 {
+  color: #233b53;
+}
+
+#contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+#contato input,
+#contato textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce7ed;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contato textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ========================================== */
+/* 10. BOTÕES                                 */
+/* ========================================== */
+
+button {
+  background-color: #58758d;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d9c7a3;
+  color: #233b53;
+}
+
+/* ========================================== */
+/* 11. RODAPÉ                                 */
+/* ========================================== */
+
+.rodape {
+  background-image:
+    linear-gradient(rgba(35, 59, 83, 0.75), rgba(35, 59, 83, 0.75)),
+    url("imagem/sunset\ .jpg");
+
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.rodape h2 {
+  color: #d9c7a3;
+}
+
+/* ========================================== */
+/* 12. RESPONSIVIDADE - TABLETS               */
+/* ========================================== */
+
+@media (max-width: 900px) {
+  header {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .identidade h1 {
+    font-size: 25px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .cartao {
+    grid-template-columns: 40% 60%;
+  }
+
+  .imagem-principal {
+    height: 280px;
+  }
+
+  .informacoes-destino {
+    padding: 15px;
+  }
+
+  .galeria-atividades {
+    gap: 8px;
+  }
+}
+
+/* ========================================== */
+/* 13. RESPONSIVIDADE - CELULARES              */
+/* ========================================== */
+
+@media (max-width: 600px) {
+  /* CABEÇALHO */
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 20px 12px;
+  }
+
+  .identidade h1 {
+    font-size: 23px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  /* CONTEÚDO PRINCIPAL */
+
+  main {
+    padding: 12px;
+    gap: 18px;
+  }
+
+  main section {
+    width: 100%;
+  }
+
+  main section h2 {
+    font-size: 22px;
+  }
+
+  /* DESTAQUE */
+
+  .Destaque {
+    padding: 30px 12px;
+  }
+
+  .Destaque img {
+    height: 200px;
+  }
+
+  .Destaque h2 {
+    font-size: 26px;
+  }
+
+  .Destaque p {
+    font-size: 14px;
+  }
+
+  /* CARTÕES */
+
+  .lado-lado {
+    gap: 20px;
+  }
+
+  .cartao {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem-principal {
+    width: 100%;
+    height: 220px;
+  }
+
+  .informacoes-destino {
+    padding: 15px;
+  }
+
+  .informacoes-destino h3 {
+    font-size: 23px;
+  }
+
+  .informacoes-destino p {
+    font-size: 15px;
+  }
+
+  /* MINIATURAS */
+
+  .galeria-atividades {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .atividade img {
+    height: 80px;
+  }
+
+  .atividade span {
+    font-size: 11px;
+  }
+
+  /* CONTATO */
+
+  #contato {
+    padding: 20px 12px;
+  }
+
+  #contato div {
+    width: 100%;
+  }
+
+  #contato form {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* RODAPÉ */
+
+  .rodape {
+    padding: 25px 12px;
+  }
+
+  .rodape h2 {
+    font-size: 21px;
+  }
+}

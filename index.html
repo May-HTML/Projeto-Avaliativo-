@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Explore World</title>
+
+    <link rel="stylesheet" href="Estilo.css" />
+  </head>
+
+  <body>
+    <!-- CABECALHO -->
+    <header>
+      <div class="identidade">
+        <h1>🌎 Explore World</h1>
+        <p>- -> Viagens pelo mundo</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#inicio"> 📎 Início</a></li>
+          <li><a href="#destino">🗺️ Destino</a></li>
+          <li><a href="#contato">💬 Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTEUDO PRINCIPAL -->
+    <main>
+      <!-- DESTAQUE -->
+      <section id="inicio" class="Destaque">
+        <div>
+          <img src="imagem/pexels.jpg " />
+          <h2>Explore Mundo</h2>
+
+          <p>Explore destinos incríveis e viva novas aventuras.</p>
+
+          <a href="#destino" class="Botao">Explorar agora</a>
+        </div>
+      </section>
+
+      <!-- DESTINOS -->
+      <section class="DESTINOS">
+        <h2>Escolha seu Destino 🔎</h2>
+
+        <p>
+          Descubra os melhores lugares para visitar e faça sua viagem perfeita.
+        </p>
+      </section>
+
+      <!-- CARTOES DOS DESTINOS -->
+      <section id="destino">
+        <h2>Conheça nossos destinos</h2>
+
+        <div class="lado-lado">
+          <!-- JAPÃO -->
+          <article class="cartao">
+            <img
+              class="imagem-principal"
+              src="imagem/japao/Monte Fuji.jpg"
+              alt="Monte Fuji no Japão"
+            />
+
+            <div class="informacoes-destino">
+            
+              <h3 class="titulo-japao">Japão</h3>
+
+              <p>Cultura, natureza e aventuras</p>
+
+              <div class="galeria-atividades">
+                <div class="atividade">
+                  <img
+                    src="imagem/japao/Japao1.jpg"
+                    alt="Caminhada no Monte Fuji"
+                  />
+                  <span>Caminhada no Monte Fuji</span>
+                </div>
+
+                <div class="atividade">
+                  <img
+                    src="imagem/japao/Japao5.jpg"
+                    alt="Rafting em Minakami"
+                  />
+                  <span>Rafting em Minakami</span>
+                </div>
+
+                <div class="atividade">
+                  <img
+                    src="imagem/japao/Japao11.jpg"
+                    alt="Ciclismo em Shimanami Kaido"
+                  />
+                  <span>Ciclismo em Shimanami Kaido</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SUÍÇA -->
+          <article class="cartao">
+            <img
+              class="imagem-principal"
+              src="imagem/Suica/Alpes Suíços.jpg"
+              alt="Alpes Suíços"
+            />
+
+            <div class="informacoes-destino">
+              <h3 class="titulo-suica"> Suiça </h3>
+
+              <p>Adrenalina nos Alpes</p>
+
+              <div class="galeria-atividades">
+                <div class="atividade">
+                  <img
+                    src="imagem/Suica/Suiça3.jpg"
+                    alt="Parapente em Interlaken"
+                  />
+                  <span>Parapente em Interlaken</span>
+                </div>
+
+                <div class="atividade">
+                  <img
+                    src="imagem/Suica/Suiça6.jpg"
+                    alt="Mountain bike nos Alpes"
+                  />
+                  <span>Mountain bike nos Alpes</span>
+                </div>
+
+                <div class="atividade">
+                  <img
+                    src="imagem/Suica/Suiça2.jpg"
+                    alt="Caiaque no Lago Brienz"
+                  />
+                  <span>Caiaque no Lago Brienz</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- NORUEGA -->
+          <article class="cartao">
+            <img
+              class="imagem-principal"
+              src="imagem/Noruega/aurora boreal.jpg"
+              alt="Fiordes da Noruega"
+            />
+
+            <div class="informacoes-destino">
+              <h3 class="titulo-noruega"> Noruega </h3>
+
+              <p>Fiordes, montanhas e desafios</p>
+
+              <div class="galeria-atividades">
+                <div class="atividade">
+                  <img
+                    src="imagem/Noruega/Noruega3.jpg"
+                    alt="Caminhada em Trolltunga"
+                  />
+                  <span>Caminhada em Trolltunga</span>
+                </div>
+
+                <div class="atividade">
+                  <img
+                    src="imagem/Noruega/Noruega14.jpg"
+                    alt="Escalada Via Ferrata"
+                  />
+                  <span>Escalada Via Ferrata</span>
+                </div>
+
+                <div class="atividade">
+                  <img
+                    src="imagem/Noruega/Noruega13.jpg"
+                    alt="Caiaque nos fiordes"
+                  />
+                  <span>Caiaque nos fiordes</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div>
+        <h2><b>Entre em Contato</b></h2>
+      </div>
+
+      <p><i>Fale conosco para tirar dúvidas ou planejar sua viagem.</i></p>
+
+      <form onsubmit="enviar(event)">
+        <label for="nome"><b>Nome</b></label>
+        <input type="text" id="nome" placeholder="Seu nome" required />
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" id="email" placeholder="Seu email" required />
+
+        <label for="mensagem"><b>Mensagem</b></label>
+        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- RODAPE -->
+    <footer class="rodape">
+      <h2>🌎 EXPLORE WORLD</h2>
+
+      <p>Viaje. Explore. Descubra.</p>
+
+      <p>© 2026 Explore World.</p>
+
+      <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
